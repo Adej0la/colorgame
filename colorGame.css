@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* custom styles */
+
+:root {
+  --font-primary: monospace;
+
+  --fw-regular: 400;
+  --fw-bold: 600;
+
+  --fs-h1: 2.25rem;
+  --fs-body: 1.25rem;
+}
+
+body {
+  background: #232323;
+  color: white;
+  font-family: var(--font-primary);
+}
+
+.squares {
+  max-width: 800px;
+  margin-top: 4em;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 3em;
+}
+
+.square {
+  background-color: pink;
+  float: left;
+  width: 30%;
+  margin: 1.66%;
+  padding-bottom: 30%;
+  border-radius: 50%;
+  transition: background 250ms;
+}
+
+.headerDiv {
+  background-color: teal;
+}
+
+h1 {
+  text-align: center;
+  font-weight: var(--fw-regular);
+  text-transform: uppercase;
+  font-size: var(--fs-h1);
+  line-height: 1.35;
+  padding-top: 0.5rem 0;
+}
+
+.colorDisplay {
+  font-weight: var(--fw-bold);
+  display: block;
+  font-size: 150%;
+}
+
+.buttonDiv {
+  background: white;
+  height: 30px;
+  color: teal;
+  text-align: center;
+  font-size: var(--fs-body);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+}
+
+.buttonDiv__element {
+  border: none;
+  background: none;
+  padding: 0 1em;
+  font-family: inherit;
+  text-transform: inherit;
+  font-weight: inherit;
+  font-size: var(--fs-body);
+  height: 100%;
+  letter-spacing: 1px;
+  outline-style: none;
+  color: inherit;
+  transition: background 250ms, color 250ms;
+}
+
+.buttonDiv__element:hover {
+  color: white;
+  background: teal;
+}
+
+.selected {
+  background: teal;
+  color: white;
+}
+
+.info {
+  display: inline-block;
+  width: 30%;
+  font-size: inherit;
+  color: inherit;
+}
